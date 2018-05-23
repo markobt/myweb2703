@@ -9,6 +9,9 @@ class ArtifactBox(models.Model):
     version = models.FloatField(verbose_name='Версия')
     url = models.URLField(verbose_name='Веб-адрес проекта')
 
+    def __str__(self):
+        return  self.name
+
 # Простые поля:
 #Класс поля           - Тип данных
 #models.IntegerField  - целое число
