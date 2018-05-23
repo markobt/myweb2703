@@ -74,10 +74,14 @@ WSGI_APPLICATION = 'myweb2703.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+  'default': {
+     'ENGINE': 'django.db.backends.mysql', 
+     'NAME': 'myweb2703',
+     'USER': 'u_myweb2703',
+     'PASSWORD': '12qwaszx',
+     'HOST': 'db',
+     'PORT': '3306',
+  }
 }
 
 
