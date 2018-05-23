@@ -30,14 +30,15 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'firstapp',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,7 +76,7 @@ WSGI_APPLICATION = 'myweb2703.wsgi.application'
 
 DATABASES = {
   'default': {
-     'ENGINE': 'django.db.backends.mysql', 
+     'ENGINE': 'django.db.backends.mysql',
      'NAME': 'myweb2703',
      'USER': 'u_myweb2703',
      'PASSWORD': '12qwaszx',
