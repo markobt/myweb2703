@@ -2,6 +2,6 @@
 <h1> Дашборд </h1>
 <ul>
   {% for todo in object_list %}
-    <li>{{ todo }} | {{ todo.description }}</li>
+    <li>{{ todo.project }} | {{ todo.author }} | {{ todo.comment }} </li>
   {% endfor %}
 </ul>

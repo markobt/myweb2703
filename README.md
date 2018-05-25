@@ -30,7 +30,7 @@ $ pipenv shell
 #Пример:
 
 ```
-curl -X POST http://localhost:8000/api/v1/ -d "title=Title Python&description=Description Python"
+curl -X POST http://localhost:8000/api/v1/ -d "project=GeoProject Python&author=dev1&comment=fix link"
 ```
 
 To be continues docker start
