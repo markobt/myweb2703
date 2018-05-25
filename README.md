@@ -1,5 +1,6 @@
-# Установка на локальную машину. Данный проект будет использовать для защиты окончания курса python c нуля.
-# Я выбрал DJANGO,так как, DjangoThe web framework for perfectionists with  DEADLINE, я начал писать за неделю до сдачи :)
+# Установка на локальную машину.
+Данный проект будет использовать для защиты окончания курса python c нуля.
+Я выбрал DJANGO,так как, DjangoThe web framework for perfectionists with  DEADLINE, я начал писать за неделю до сдачи :)
 
 Перед установкой, Вам нужно скачать репозиторий.
 
@@ -21,6 +22,16 @@ $ pipenv shell
 
 Для выхода из локального окружения введите `exit`
 
+#Основная идея:
+
+После выполения builds(сборки приложения) или deploy(выкатки кода на stage or prod)  с помощью curl, POST-ом \
+отправлять данные на приложения.
+
+#Пример:
+
+```
+curl -X POST http://localhost:8000/api/v1/ -d "title=Title Python&description=Description Python"
+```
 
 To be continues docker start
 

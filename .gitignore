@@ -1,5 +1,5 @@
 db.sqlite3
 Pipfile.lock
-.idea
+.idea/
 venv
 */__pycache__/
