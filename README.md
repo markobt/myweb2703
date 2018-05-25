@@ -15,6 +15,7 @@ $ git clone git@github.com:markobt/myweb2703.git
 $ cd myweb2703
 $ pipenv shell
 (env) $ pipenv install
+(env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 (env) $ python manage.py createsuperuser
 (env) $ python manage.py runserver
