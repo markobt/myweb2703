@@ -8,14 +8,15 @@ $ git clone git@github.com:markobt/myweb2703.git
 ```
 
 Потом перейти  `cd myweb2703` в текущую директорию и запустить локальное окружения `pipenv shell` далее установить пакеты `pipenv install`.
-Накатить миграции `python manage.py migrate` и запустить сервер `python manage.py runserver`.
+Накатить миграции `python manage.py migrate`, далее создать супер юзера `python manage.py createsuperuser` и запустить сервер `python manage.py runserver`.
 
 ```
 $ cd myweb2703
 $ pipenv shell
-(mb) $ pipenv install
-(mb) $ python manage.py migrate
-(mb) $ python manage.py runserver
+(env) $ pipenv install
+(env) $ python manage.py migrate
+(env) $ python manage.py createsuperuser
+(env) $ python manage.py runserver
 ```
 
 Для выхода из локального окружения введите `exit`
