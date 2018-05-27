@@ -1,7 +1,22 @@
-<!-- templates/home.html -->
-<h1> Дашборд </h1>
-<ul>
-  {% for todo in object_list %}
-    <li>{{ todo.project }} | {{ todo.author }} | {{ todo.comment }} </li>
-  {% endfor %}
-</ul>
+{% extends 'base.html' %}
+{% block page %}
+   {% for deploy in object_list %}
+       <div>
+       <h2><a href="{% url 'deploy_detail.html' deploy_id=deploy.id %}">{{ deploy.project }}</a></h2>
+       <div>{{ deploy.author }}</div>
+       <div>{{ deploy.comment }}</div>
+       </div>
+   {% endfor %}
+{% endblock %}
+
+<!--
+Django шаблонизатор - мы можем обращатья к python обьектам внутри html файла
+
+1) переменные { { param } }
+2) теги       { % теги %}
+3) фильтры шаблона
+
+теги шаблона : { % тег %}
+1) теги цикла
+2) теги с условным выражанием  { % if условие 1  %} { % elif условие 2 % } { % else % }  { % endif % }
+-->

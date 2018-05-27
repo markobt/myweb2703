@@ -5,11 +5,11 @@ from todos import models
 from . import serializers
 
 
-class ListTodo(generics.ListCreateAPIView):
-    queryset = models.Todo.objects.all()
-    serializer_class = serializers.TodoSerializer
+class ListDeploy(generics.ListCreateAPIView):
+    queryset = models.Deploy.objects.all()
+    serializer_class = serializers.DeploySerializer
 
 
-class DetailTodo(generics.RetrieveUpdateDestroyAPIView):
-    queryset = models.Todo.objects.all()
-    serializer_class = serializers.TodoSerializer
+class DetailDeploy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = models.Deploy.objects.all()
+    serializer_class = serializers.DeploySerializer

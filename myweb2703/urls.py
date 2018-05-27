@@ -15,11 +15,18 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
+from todos import  views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
-    path('', include('todos.urls')),
+    path('', views.HomePageView.as_view(), name='home'),
+    re_path(r'^(?P<deploy_id>\d+)/$', views.deploy_detail, name='deploy_detail.html'),
 ]
+
+
+#repath
+# example.com/1/
+# example.com/33/

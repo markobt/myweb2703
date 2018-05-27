@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block page %}
+    <a href="{% url 'home' %}">Главная</a>
+    <div>
+       <h2>{{ deploy.project }}</h2>
+       <div>{{ deploy.author }}</div>
+       <div>{{ deploy.comment }}</div>
+       </div>
+{% endblock %}
