@@ -1,6 +1,5 @@
 from rest_framework import permissions
 
-
 CUSTOM_SAFE_METHODS = ('GET', 'HEAD', 'OPTIONS')
 
 

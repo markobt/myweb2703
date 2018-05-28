@@ -4,6 +4,8 @@
        <div>
        <h2><a href="{% url 'deploy_detail.html' deploy_id=deploy.id %}">{{ deploy.project }}</a></h2>
        <div>{{ deploy.author }}</div>
+       <div>{{ deploy.name }}</div>
+       <div>{{ deploy.version }}</div>
        <div>{{ deploy.comment }}</div>
        </div>
    {% endfor %}

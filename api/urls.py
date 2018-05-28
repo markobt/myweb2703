@@ -1,9 +1,8 @@
-from django.urls import path, include
+from django.urls import path
 
 from . import views
 
 urlpatterns = [
     path('', views.ListDeploy.as_view()),
-    path('<int:pk>/', views.DetailDeploy.as_view()),
-    path('rest-auth/', include('rest_auth.urls')),
+    path('<int:pk>/', views.DeployDetail.as_view()),
 ]

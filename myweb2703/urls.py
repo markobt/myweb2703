@@ -22,6 +22,8 @@ from todos import  views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
+    path('api-auth/', include('rest_framework.urls')),
+    path('api/v1/rest-auth/', include('rest_auth.urls')),
     path('', views.HomePageView.as_view(), name='home'),
     re_path(r'^(?P<deploy_id>\d+)/$', views.deploy_detail, name='deploy_detail.html'),
 ]

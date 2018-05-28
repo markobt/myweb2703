@@ -31,7 +31,12 @@ $ pipenv shell
 #Пример:
 
 ```
-curl -X POST http://localhost:8000/api/v1/ -d "project=GeoProject Python&author=dev1&comment=fix link"
+without token
+curl -X POST http://localhost:8000/api/v1/ -d "author=1&project=build2&comment=fix link"
+
+with
+curl -X GET http://127.0.0.1:8000/api/v1/ -H  'Authorization: Token $token'
+curl -X POST http://localhost:8000/api/v1/ -d "author=1&name=Dev1&project=build2&version=0.1&comment=fix link" -H 'Authorization: Token $token'
 ```
 
 To be continues docker start
@@ -39,11 +44,7 @@ To be continues docker start
 ```
 - docker-compose build
 - docker-compose up -d
-- docker-compose run  web django-admin.py startproject myweb2703 .
-- docker-compose run  web python manage.py migrate
-- docker-compose exec web python manage.py startapp todos
-- docker-compose run  web python manage.py createsuperuser
 - docker-compose run  web python manage.py makemigrations
 - docker-compose run  web python manage.py migrate
-- docker-compose exec web python manage.py startapp api
+- docker-compose run  web python manage.py createsuperuse
 ```
