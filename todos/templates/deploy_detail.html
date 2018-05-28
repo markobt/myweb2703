@@ -2,10 +2,10 @@
 {% block page %}
     <a href="{% url 'home' %}">Главная</a>
     <div>
-       <h2>{{ deploy.project }}</h2>
-       <div>{{ deploy.author }}</div>
-       <div>{{ deploy.name }}</div>
-       <div>{{ deploy.version }}</div>
-       <div>{{ deploy.comment }}</div>
+       <h2>Project: {{ deploy.project }}</h2>
+       <div>Author: {{ deploy.author }}</div>
+       <div>Name: {{ deploy.name }}</div>
+       <div>Version App: {{ deploy.version }}</div>
+       <div>Comment: {{ deploy.comment }}</div>
        </div>
 {% endblock %}

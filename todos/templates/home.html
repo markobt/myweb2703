@@ -3,10 +3,10 @@
    {% for deploy in object_list %}
        <div>
        <h2><a href="{% url 'deploy_detail.html' deploy_id=deploy.id %}">{{ deploy.project }}</a></h2>
-       <div>{{ deploy.author }}</div>
-       <div>{{ deploy.name }}</div>
-       <div>{{ deploy.version }}</div>
-       <div>{{ deploy.comment }}</div>
+       <div>Author: {{ deploy.author }}</div>
+       <div>Name: {{ deploy.name }}</div>
+       <div>Version APP: {{ deploy.version }}</div>
+       <div>Comment: {{ deploy.comment }}</div>
        </div>
    {% endfor %}
 {% endblock %}
