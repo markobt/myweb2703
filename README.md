@@ -44,7 +44,7 @@ To be continues docker start
 ```
 - docker-compose build
 - docker-compose up -d
-- docker-compose run  web python manage.py makemigrations
-- docker-compose run  web python manage.py migrate
-- docker-compose run  web python manage.py createsuperuse
+- docker-compose run web python manage.py makemigrations
+- docker-compose run web python manage.py migrate
+- docker-compose run web python manage.py createsuperuser
 ```

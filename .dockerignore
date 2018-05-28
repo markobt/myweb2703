@@ -1,5 +1,6 @@
+.git
 db.sqlite3
-todos/migrations/*
+todos/migrations/
 Pipfile.lock
 .idea/
 venv
