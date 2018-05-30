@@ -32,3 +32,7 @@ urlpatterns = [
 #repath
 # example.com/1/
 # example.com/33/
+
+#\d
+#When the UNICODE flag is not specified, matches any decimal digit; this is equivalent to the set [0-9].
+#With UNICODE, it will match whatever is classified as a decimal digit in the Unicode character properties database.
