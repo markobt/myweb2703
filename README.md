@@ -44,13 +44,14 @@ curl -X GET http://localhost:8000/api/v1/ -H  'Authorization: Token $token'
 curl -X POST http://localhost:8000/api/v1/ -d "author=1&name=Dev1&project=build2&version=0.1&comment=fix link" -H 'Authorization: Token $token'
 ```
 
-``
+```
 Django version 2.0.5, using settings 'myweb2703.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 [30/May/2018 08:38:47] "POST /api/v1/rest-auth/login/ HTTP/1.1" 200 50
-``
-To be continues docker start
+```
+
+For docker container
 
 ```
 - docker-compose build
