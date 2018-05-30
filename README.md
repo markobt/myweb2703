@@ -1,6 +1,6 @@
 # Установка на локальную машину.
 Данный проект будет использовать для защиты окончания курса python c нуля.
-Я выбрал DJANGO,так как, DjangoThe web framework for perfectionists with  DEADLINE, я начал писать за неделю до сдачи :)
+Я выбрал DJANGO,так как, Django - The web framework for perfectionists with  DEADLINE, я начал писать за неделю до сдачи :)
 
 Перед установкой, Вам нужно скачать репозиторий.
 
@@ -34,8 +34,13 @@ $ pipenv shell
 without token
 curl -X POST http://localhost:8000/api/v1/ -d "author=1&project=build2&comment=fix link"
 
+get token key
+
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'username=admin&password=12qwaszx' 'http://localhost:8000/api/v1/rest-auth/login/' --insecure
+{"key":"56cafc5028f96eee4c1c6a8f0bbdbf10960ce387"}
+
 with
-curl -X GET http://127.0.0.1:8000/api/v1/ -H  'Authorization: Token $token'
+curl -X GET http://localhost:8000/api/v1/ -H  'Authorization: Token $token'
 curl -X POST http://localhost:8000/api/v1/ -d "author=1&name=Dev1&project=build2&version=0.1&comment=fix link" -H 'Authorization: Token $token'
 ```
 
