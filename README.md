@@ -41,7 +41,7 @@ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'username=a
 
 with
 curl -X GET http://localhost:8000/api/v1/ -H  'Authorization: Token $token'
-curl -X POST http://localhost:8000/api/v1/ -d "author=1&name=Dev1&project=build2&version=0.1&comment=fix link" -H 'Authorization: Token $token'
+curl -X POST http://localhost:8000/api/v1/ -d "author=1&name=Alex Dev1&project=build2&version=0.1&comment=fix fatal link" -H 'Authorization: Token $token'
 ```
 
 ```
